@@ -18,7 +18,11 @@ If not (as I did) - replace *C2_user* and *C2_password* with the credentials of 
 The user\pass should be edited at *FileOverWeb.cpp*
 
 ### Executing LazyS
+Move the dll and executable to the victim's machine from the bin folder.
+Execute the _Injector_, it will self-inject the payload and contact the C2 to get orders.
+Note that the original implementation supports injection to other processes as well but this may cause errors in my implementation. 
 
+## C2 Opcodes
 ### 301
 NO OP, default setting
 
